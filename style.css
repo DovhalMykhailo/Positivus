@@ -130,7 +130,7 @@ a {
     padding-bottom: 40px;
 }
 
-.cards:nth-last-child(3) {
+.cards:nth-last-child(1) {
     padding-bottom: 100px;
 }
 
