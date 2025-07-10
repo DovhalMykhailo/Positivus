@@ -16,7 +16,7 @@ a {
 
 .page  {
     width: 1440px; /*DELETE*/
-    height: 3000px; /*DELETE*/
+    height: 5000px; /*DELETE*/
     background-color: #3b3b3b; /*DELETE*/
     font-family: "Space Grotesk", sans-serif;
     box-sizing: border-box;
@@ -267,4 +267,75 @@ a {
 
 .case-item-container__arrow {
     height: 20px;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+}
+
+.process-item {
+    padding: 41px 60px;
+    margin-bottom: 30px;
+    background-color: #f3f3f3;
+    border: 1px solid var(--blackPS);
+    border-radius: 45px;
+    box-shadow: 0px 5px 0px 0px var(--blackPS);
+}
+
+.process-item--active {
+    background-color: var(--greenPS);
+}
+
+.process-item-preview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.process-item-preview-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.process-item-preview-container__number {
+    padding-right: 25px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 77px;
+}
+
+.process-item-preview-container__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.process__state {
+    background-image: url(images/plus-icon.png);
+    background-size: contain;
+    width: 58px;
+    height: 58px;
+}
+
+.process__state--active {
+    background-image: url(images/minus-icon.png);
+}
+
+.process-expandable {
+    display: none;
+}
+
+.process-expandable--active {
+    display: block;
+}
+
+.process__separator-line {
+    border: 1px solid #0000003f;
+}
+
+.process__content {
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 30px;
 }
