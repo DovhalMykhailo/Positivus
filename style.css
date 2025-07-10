@@ -15,12 +15,12 @@ a {
 }
 
 .page  {
-    width: 1440px;
-    height: 3000px;
+    width: 1440px; /*DELETE*/
+    height: 3000px; /*DELETE*/
+    background-color: #3b3b3b; /*DELETE*/
     font-family: "Space Grotesk", sans-serif;
     box-sizing: border-box;
     padding: 0 100px;
-    background-color: #3b3b3b;
 }
 
 .navbar {
@@ -51,12 +51,12 @@ a {
     border: 1px solid var(--blackPS);
     padding: 20px 35px;
     border-radius: 14px;
+    line-height: 28px;
 }
 
 .button--black-background {
     background-color: var(--blackPS);
     color: #fff;
-    position: absolute;
 }
 
 .header {
@@ -130,7 +130,7 @@ a {
     padding-bottom: 40px;
 }
 
-.cards:nth-last-child(2) {
+.cards:nth-last-child(3) {
     padding-bottom: 100px;
 }
 
@@ -141,18 +141,16 @@ a {
     display: inherit;
     justify-content: space-between;
     flex: 1;
-    border: 1px solid rgb(25, 26, 35);
-    box-shadow: 0px 5px 0px 0px rgb(25, 26, 35);
+    border: 1px solid var(--blackPS);
+    box-shadow: 0px 5px 0px 0px var(--blackPS);
 }
 
 .cards-item--white {
     background: rgb(243, 243, 243);
-    
 }
 
 .cards-item--green {
     background: var(--greenPS);
-    
 }
 
 .cards-item--black {
@@ -165,6 +163,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .cards-item-content__desription {
@@ -192,4 +191,42 @@ a {
     width: 210px;
     height: 166px;
     align-self: center;
+}
+
+.cta {
+    background-color: #f3f3f3;
+    padding: 60px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cta-container {
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cta__title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.cta__text {
+    font-size: 18px;
+    line-height: 23px;
+    width: 500px;
+    padding: 26px 0;
+}
+
+
+.cta__image {
+    width: 359px;
+    height: 394.27px;
+    position: absolute;
+    right: 135px;
+    top: -25px;
 }
