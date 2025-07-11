@@ -16,7 +16,7 @@ a {
 
 .page  {
     width: 1440px; /*DELETE*/
-    height: 5000px; /*DELETE*/
+    height: 9000px; /*DELETE*/
     background-color: #3b3b3b; /*DELETE*/
     font-family: "Space Grotesk", sans-serif;
     box-sizing: border-box;
@@ -338,4 +338,108 @@ a {
     font-size: 18px;
     line-height: 23px;
     padding-top: 30px;
+}
+
+.testimonials-container {
+    background-color: var(--blackPS);
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-bottom: 68px;
+}
+
+.testimonials {
+    padding-top: 84px;
+    padding-bottom: 124px;
+    padding-left: -346px;
+    padding-right: -332px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-content__text {
+    border: solid 1px var(--greenPS);
+    border-radius: 45px;
+    padding: 48px 52px;
+    min-width: 406px;
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+}
+
+.testimonials-content__text::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--blackPS);
+    border-left: 2px solid var(--greenPS);
+    border-bottom: 2px solid var(--greenPS);
+    transform: rotate(-45deg);
+    left: 40px;
+    bottom: -20px;
+}
+
+.testimonials-information {
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.testimonials-information__title {
+    color: var(--greenPS);
+    font-size: 18px;
+    line-height: 0px;
+    padding-top: 48px;
+}
+
+.testimonials-information-subtitle {
+    color: #fff;
+    font-size: 18px;
+    line-height: 0px;
+    padding-top: 28px;
+    font-weight: 400;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__arrow {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.slider__arrow-image {
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.slider__arrow-image--rotated {
+    transform: rotate(180deg);
+}
+
+.slider__arrow-image--active {
+    color: #fff;
+}
+
+.slider-navigation {
+    padding: 0 190px;
+}
+
+.slider-navigation__indicator {
+    color: var(--greyPS);
+    padding: 9.5px;
+}
+
+.slider-navigation__indicator--active {
+    color: var(--greenPS);
 }
