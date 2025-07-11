@@ -488,3 +488,55 @@ a {
     font-size: 18px;
     line-height: 23px;
 }
+
+.contact-block {
+    padding: 60px 100px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-block-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.content-block-form-radio__input {
+    cursor: pointer;
+}
+
+.content-block-form-radio__label {
+    cursor: pointer;
+    padding-right: 35px;
+    padding-left: 8px;
+}
+
+.content-block-form-radio {
+    padding-bottom: 40px;
+}
+
+ .contact-block-form__label {
+    padding-bottom: 5px;
+ }
+
+.contact-block-form__input {
+    min-width: 456px;
+    border-radius: 14px;
+    padding: 18px 30px;
+    margin-bottom: 25px;
+}
+
+.contact-block-form__input--message {
+    height: 190px;
+}
+
+.contact-block__image {
+    width: 691.57px;
+    height: 648px;
+    position: absolute;
+    right: 21px;
+    /* top: 0; */
+}
