@@ -52,6 +52,7 @@ a {
     padding: 20px 35px;
     border-radius: 14px;
     line-height: 28px;
+    font-size: 20px;
 }
 
 .button--black-background {
@@ -99,7 +100,7 @@ a {
 .subheading {
     display: flex;
     justify-content: flex-start;
-    padding-top: 140px;
+    padding-top: 100px;
     padding-bottom: 85px;
 }
 
@@ -445,10 +446,17 @@ a {
 }
 
 .team {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 40px;
+    padding-bottom: 40px;
 }
 
 .team-container {
