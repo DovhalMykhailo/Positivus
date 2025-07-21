@@ -39,10 +39,14 @@ a {
     height: 36px;
 }
 
-
-
 .navbar-menu__item {
     padding: 20px 40px;
+    transition: font-weight 1s ease;
+}
+
+.navbar-menu__item:hover {
+    font-weight: 600;
+    transition: font-weight 1s ease;
 }
 
 .button {
@@ -51,15 +55,40 @@ a {
     border-radius: 14px;
     line-height: 28px;
     font-size: 20px;
+    box-shadow: 0px 5px 0px 0px var(--blackPS);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: none;
+    margin-top: 0;
+    background-color: var(--blackPS);
+    color: white;
+    transition: all 0.5s ease;
 }
 
 .button--black-background {
     background-color: var(--blackPS);
+    box-shadow: 0px 5px 0px 0px #858585;
     color: #fff;
+}
+
+.button--black-background:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: none;
 }
 
 .button-green-background{
     background-color: var(--greenPS);
+    box-shadow: 0px 5px 0px 0px #858585;
+}
+
+.button-green-background:hover {
+    box-shadow: none;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s ease;
 }
 
 .header {
@@ -157,14 +186,27 @@ a {
     flex: 1;
     border: 1px solid var(--blackPS);
     box-shadow: 0px 5px 0px 0px var(--blackPS);
+    transition: outline 2.0s ease;
+}
+
+.cards-item:hover {
+    outline: var(--greenPS) 9px solid;
+    transition: outline 0.5s ease;
+    box-shadow: none;
 }
 
 .cards-item--white {
-    background: rgb(243, 243, 243);
+    background-color: rgb(243, 243, 243);
 }
 
 .cards-item--green {
     background: var(--greenPS);
+}
+
+.cards-item--green:hover {
+    outline: var(--blackPS) 9px solid;
+    transition: outline 0.5s ease;
+    box-shadow: none;
 }
 
 .cards-item--black {
@@ -295,6 +337,10 @@ a {
     border: 1px solid var(--blackPS);
     border-radius: 45px;
     box-shadow: 0px 5px 0px 0px var(--blackPS);
+}
+
+.process-item:not(.active):hover{
+    background-color: rgba(185, 255, 102, 0.8);
 }
 
 .process-item--active {
